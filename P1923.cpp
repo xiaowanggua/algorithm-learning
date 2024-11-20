@@ -1,4 +1,4 @@
-#include<cstdio>
+/* #include<cstdio>
 int find_min(int* n,int length,int end){
     length--;
     int i = length;
@@ -26,4 +26,16 @@ int main(){
         swap(number,find_min(number,a-i,i),i);
     }
     printf("%d",number[b]);
+}*/
+
+#include <algorithm>
+#include <cstdio>
+#include <vector>
+using namespace std;
+int main() {
+  int n, m;
+  vector<int> a;
+  scanf("%d%d", &n, &m);
+  for (int i = 0; i < n; i++) {
+  }
 }
