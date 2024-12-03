@@ -79,9 +79,17 @@ template <typename T> struct nodetree {
 };
 #include <cstdio>
 int main() {
+  int n, m;
+  scanf("%d%d", &n, &m);
   nodetree<int> t(1);
-  t.add_node(3);
-  t.add_node(5);
-  t.erase(1);
-  printf("%d", t.get(1));
+  for (int i = 2; i <= n; i++) {
+    t.add_node(i);
+  }
+  t.connect_circle();
+  node<int> *rNode = t.rootNode;
+  while (t.len > 0) {
+    rNode = (*rNode + m);
+    printf("%d ", rNode->frontNode->content);
+    t.erase(rNode->frontNode);
+  }
 }
