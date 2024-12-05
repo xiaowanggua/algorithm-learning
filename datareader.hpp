@@ -2,4 +2,4 @@
 #define datain                                                                 \
   ;                                                                            \
   freopen("./test.in", "r", stdin);                                            \
-  freopen("./test.out", "w", stdout);
+  // freopen("./test.out", "w", stdout);
