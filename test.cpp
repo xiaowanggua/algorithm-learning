@@ -1,8 +1,7 @@
-#include<stdio.h>
-int* sbzty(){
-    int a[] = {1,2,3};
-    return a;
-}
+#include<string>
+#include<iostream>
+using namespace std;
 int main(){
-    printf("%d",sbzty()[1]);
+    string s = "123";
+    cout << s.substr(s.find("2"),3);
 }
